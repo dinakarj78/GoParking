@@ -1,8 +1,8 @@
 package API
 
 import (
+	"GoParking/models"
 	"fmt"
-	"ticketing/models"
 )
 
 func DeleteFromlot(location *models.Parkinglot, vno string, vtype string) {

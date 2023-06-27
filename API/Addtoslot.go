@@ -1,8 +1,8 @@
 package API
 
 import (
+	"GoParking/models"
 	"fmt"
-	"ticketing/models"
 
 	uuid "github.com/satori/go.uuid"
 )

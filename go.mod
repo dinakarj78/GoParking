@@ -1,4 +1,5 @@
-module ticketing
+module GoParking
+
 
 go 1.20
 

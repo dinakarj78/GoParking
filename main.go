@@ -1,9 +1,9 @@
 package main
 
 import (
+	"GoParking/API"
+	"GoParking/models"
 	"fmt"
-	"ticketing/API"
-	"ticketing/models"
 
 	uuid "github.com/satori/go.uuid"
 )
