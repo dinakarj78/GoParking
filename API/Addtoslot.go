@@ -21,9 +21,13 @@ func AddtoSlot(location *models.Parkinglot, vno string, vtype string) {
 			}
 		}
 	} else {
-		fmt.Println("No such type vehicle or  number of lots")
+		if !ok {
+			fmt.Println("No such car tye")
+		} else {
+			fmt.Println("Adding to the queue")
+			AddtoQueue(vtype, vno)
+		}
 	}
 	fmt.Println("Remaining lots:", location.Capacity)
 	fmt.Println("suv lots: ", location.TypeCap["SUV"], "Sedan lots: ", location.TypeCap["SEDAN"], "Truck lots: ", location.TypeCap["TRUCK"])
-
 }

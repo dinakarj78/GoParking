@@ -51,7 +51,7 @@ func Parkinginit(location string, capacity int, truckCapacity int, suvcapacity i
 
 func Input() {
 	i := 0
-	for i < 3 {
+	for i < 4 {
 		fmt.Println("Enter your choice:\n 1: ADD a car to slot \n 2: EMPTY a slot")
 		var choice int
 		switch fmt.Scanln(&choice); choice {
