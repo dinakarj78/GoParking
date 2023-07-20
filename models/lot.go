@@ -7,7 +7,6 @@ import uuid "github.com/satori/go.uuid"
 // "github.com/google/uuid"
 
 type Lot struct {
-	SlotType string
-	Id       uuid.UUID
-	lotno    int
+	SlotType string    `json:"slottype"`
+	Id       uuid.UUID `json:"id"`
 }
