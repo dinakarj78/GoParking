@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-)
+) 
 
 // var Honeycut = models.Parkinglot{}
 
