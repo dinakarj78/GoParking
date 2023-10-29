@@ -1,5 +1,5 @@
 package API
- 
+
 import (
 	"GoParking/models"
 	"fmt"

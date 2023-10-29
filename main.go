@@ -2,12 +2,12 @@ package main
 
 import (
 	// "GoParking/API"
-	"GoParking/API"
 	"GoParking/models"
+	"GoParking1/API"
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-) 
+)
 
 // var Honeycut = models.Parkinglot{}
 
@@ -15,6 +15,7 @@ func main() {
 	models.Parkinginit()
 	router := gin.Default() //Returns the router
 	router.GET("/getDetails", API.GetDetails)
+	router.POST("/Addlocation", API.Addlocation)
 	router.POST("/addLots", API.Addlots)
 	router.Run("localhost:8080")
 }

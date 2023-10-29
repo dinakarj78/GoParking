@@ -13,7 +13,7 @@ func AddtoQueue(vtype string, vno string) {
 		return
 	}
 	waitQueue[vno] = vtype
-	count = count + 1
+	count = count + 1 
 	fmt.Println("added to queue")
 }
 
