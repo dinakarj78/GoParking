@@ -1,9 +1,9 @@
 package models
 
-import uuid "github.com/satori/go.uuid"
-
 type vehicle struct {
-	VehicleNo   string
-	VehicleType string
-	AllotedLot  uuid.UUID
+	VehicleNo   string `json:"VehicleNo"`
+	VehicleType string `json:"VehicleType"`
+	Location    string `json:"location"`
 }
+
+var Vehicle = []vehicle{}
