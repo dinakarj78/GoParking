@@ -18,16 +18,22 @@ func Addlots(c *gin.Context) {
 		return
 	}
 	var i int = 0
+	var addedFlag=false
+
 	for _, lot := range newlot {
 		if models.Parkinglotstruct[i].Location == lot.Location {
 			models.Parkinglotstruct[i].Lots = append(models.Parkinglotstruct[i].Lots, lot)
 			models.Parkinglotstruct[i].Capacity++
-			models.Parkinglotstruct[i].TypeCap[lot.SlotType]++
+			addedFlag=true
 		} else {
 			i++
 		}
 	}
+	if(!addedFlag) {
+		c.IndentedJSON(http.StatusCreated, "adding a new location feature is not available yet")
+	}else{
 	c.IndentedJSON(http.StatusCreated, models.Parkinglotstruct)
+	}
 }
 
 func Addlocation(c *gin.Context) {

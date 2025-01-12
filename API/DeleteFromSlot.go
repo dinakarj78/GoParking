@@ -1,7 +1,7 @@
 package API
 
 import (
-	"GoParking1/models"
+	"GoParking/models"
 	// "fmt"
 )
 

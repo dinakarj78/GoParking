@@ -1,15 +1,12 @@
 package API
 
 import (
-	"GoParking1/models"
+	"GoParking/models"
 	"net/http"
-
-
 	"github.com/gin-gonic/gin"
 )
 
 var waitQueue = make(map[string]string)
-var count = 0
 
 func AddtoQueue(C *gin.Context) {
 	C.IndentedJSON(http.StatusCreated,"addingtoqueue")
@@ -26,14 +23,6 @@ func AddtoQueue(C *gin.Context) {
 	C.IndentedJSON(http.StatusAccepted,newVehicle1[i].VehicleNo+"is added to queue"+"queue is:"+waitQueue[newVehicle1[i].VehicleNo])
 }
 	}
-
-	// if _, ok := waitQueue[vno]; ok {
-	// 	fmt.Println("Already in the queue")
-	// 	return
-	// }
-	// waitQueue[vno] = vtype
-	// count = count + 1
-	// fmt.Println("added to queue")
 	}
 
 func SearchQueue(vtype string) string {

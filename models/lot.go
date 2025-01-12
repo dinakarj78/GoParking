@@ -4,7 +4,7 @@ import uuid "github.com/satori/go.uuid"
 
 // "fmt"
 // "ticketing/Config"
-// "github.com/google/uuid"
+// "github.com/google/uuid" 
 
 type Lot struct {
 	SlotType string    `json:"slottype"`
@@ -19,3 +19,4 @@ var Lots = []Lot{
 		Location: "clapper lane",
 	},
 }
+ 
