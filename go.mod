@@ -1,4 +1,4 @@
-module GoParking1
+module GoParking
 
 go 1.20
 
