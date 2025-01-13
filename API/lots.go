@@ -11,7 +11,7 @@ import (
 func GetDetails(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, models.Parkinglotstruct)
 }
-
+//add lots to a location
 func Addlots(c *gin.Context) {
 	var newlot []models.Lot
 	if err := c.BindJSON(&newlot); err != nil {
@@ -35,7 +35,7 @@ func Addlots(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, models.Parkinglotstruct)
 	}
 }
-
+//adding a location..yet to be written
 func Addlocation(c *gin.Context) {
 	var locationLots []models.Parkinglot
 	if err := c.BindJSON(&locationLots); err != nil {
