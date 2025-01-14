@@ -1,0 +1,85 @@
+@import './../../brekapoints';
+
+.LoginContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-left: 5%;
+gap:10vw;
+@media (min-width: $breakpoint-small) and (max-width:$breakpoint-medium){
+    padding:12px;
+    flex-direction: column;
+    gap:0vw;
+    margin-left: auto;
+}
+.mobile_Logo{
+    width:200px;
+    height:200px; 
+    align-self: center;
+}
+}
+.login_Input_Block{
+   margin-top:20vh;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width:max-content;
+    height:auto;
+    input{
+        width:100%;
+        height:40px;
+        border-radius: 8px;
+        background-color: #EFEFEF;
+        // margin-left:20px;
+    }
+    .loginButton{
+        border-radius: 8px;
+        width: 100%;
+        height:40px;
+        font-weight: 700;
+        font-size:18px;
+    }
+    @media (min-width: $breakpoint-small) and (max-width:$breakpoint-medium){
+        h2{
+            font-weight: 400;
+            text-align: center;
+        }
+        height:380px;
+        width:auto;
+        border-radius: 5px;
+        background-color: #343A46;
+        color:white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding:12px;
+        margin-top:20px;
+        input{
+            width:80%;
+            height:40px;
+            border-radius: 8px;
+            background-color: #EFEFEF;
+            margin-left:20px;
+        }
+        .loginButton{
+            width:50%;
+            margin-left: 90px;
+        }
+
+     }
+   
+}
+
+.login_Banner {
+    float: right;
+    img{
+    height:100vh;
+    width:60vw;
+    object-fit: cover;
+    }
+ @media (min-width: $breakpoint-small)and (max-width:$breakpoint-medium){
+    img{
+        display: none;
+    }
+ }
+}
+
